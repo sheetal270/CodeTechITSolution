@@ -3,112 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Name - Portfolio</title>
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="logo">Sheetal Pisal</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <div id="header">
+       
+         <div class="container">
+            <nav>
+            <h1 id="h11">Sheetal</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi , I'm <sapn>Sheetal </sapn><br>Pisal From Pune</h1>
 
-<section id="hero">
-    <div class="hero-content">
-        <h1>Sheetal Pisal</h1>
-        <p>Web Developer</p>
-    </div>
-</section>
-
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Myself sheetal pisal I am 21 years old I am from satara I am pursuing my masters degree in MCA in Sadhu Vaswani management institute I have completed my bachelors in BCA at Vidya pratishthan college baramati with 9.1 SGPA my hobbies are trekking traveling and reading books.<br><br>
-            I am a highly skilled and experienced web developer with a passion for creating innovative and user-friendly web applications. <br><br>
-
-I have a strong understanding of web developing and web designing , and I am proficient in all aspects of the web development process, from design and development to testing and deployment.<br><br>
-
-I am a highly motivated and results-oriented individual with a strong work ethic. <br><br>
-
-I am confident that I can make a significant contribution to your team and help you achieve your goals.</p>
-    </div>
-</section>
-
-<section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Angular.js</li>
-            <li>PHP</li>
-            <li>MYSQL</li>
-        </ul>
-    </div>
-</section>
-
-<section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <h4>Tours And Travels Management System.</h4>
-                <p>The main purpose of “Tours and travels management system” is to provide a convenient way for a customer to book vehicle or whole package to tour purposes. The objective of the project is to develop a system that automates the processes and activities of a travel agency.<br>
-            Using PHP,MYSQL for the backend and for designing the UI I used Html5, Javascript, Bootstrap5</p>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <h4>Quiz Application
-           </h4>
-           <p>The Objective behind to organize Quiz competition is to evaluate the knowledge of the participants within academics as well as beyond academics and to make them familiar with the prospects of quizzes and the objectivity of the questions.I developed the mobile app
-            <br>
-           Using Android and Firebase for the backend and for designing the UI I used Html5,XML</p>
+        
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="s1.avif">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a highly skilled and experienced web developer with a passion for creating innovative and user-friendly web applications.
+
+I have a strong understanding of web developing and web designing , and I am proficient in all aspects of the web development process, from design and development to testing and deployment.
+
+I am a highly motivated and results-oriented individual with a strong work ethic.
+
+I am confident that I can make a significant contribution to your team and help you achieve your goals.
+
+</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Developer</span><br>Designing  Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web  app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>To obtain a position that will enable me to use my strong organizational skills, educational background, and ability to work well with people.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Bachelor of Computer Application</li>
+                            <li><span>2024</span><br>Master Of Computer Application</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <!-- services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-file-code-o"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit quidem cumque?</p>
+                    <a href="#">Lern more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit quidem cumque?</p>
+                    <a href="#">Lern more</a>
+                </div>
+                <div>
+                    <i class="fa fa-eraser"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit quidem cumque?</p>
+                    <a href="#">Lern more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- project -->
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="e1.jpg">
+                    <div class="layer">
+                        <h3>E-commerce Mangenment System</h3>
+                        <p>E-commerce drives profitable growth by expanding customer reach, reducing cost-to-serve, and creating differentiated customer experiences.</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="travel.jpg">
+                    <div class="layer">
+                        <h3>Tours and Travel's Management System</h3>
+                        <p>An online doctor appointment system enhances patient satisfaction. Patients no longer have to be worried about the wait times in your clinic.</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="quiz_project.jpg">
+                    <div class="layer">
+                        <h3>Quiz System</h3>
+                        <p>Quizzes help one gain a broad or specialized understanding of a subject. Quizzes are intended to encourage fun learning methods while also enhancing general knowledge. </p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
         </div>
     </div>
-</section>
+    <!-- --------contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-send"></i>contact@example.com</p>
+                    <p><i class="fa fa-phone-square"></i>675482587</p>
+                    <div class="social-icons">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <a href="shital pisal.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Your Subject" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+                    <span id="msg"></span>
 
-<section id="contact">
-    <div class="container mt-5">
-   <div class="container mt-5 ">
-    <h1 class="m-4" style="color:blueviolet;
-           font-family: 'Lobster', sans-serif; font-weight: bold; text-align: center;">Contact <span style="color:firebrick;
-            font-family: 'Lobster', sans-serif; font-weight: bold; text-align: center;"> Us</h1>
-
-    <div class="col-md-12 text-center" style="background-image: url('./images/jm.jpg'); background-size: cover; padding: 50px;">
-        <form class="mx-auto" style="max-width: 400px; background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;">
-          <div class="mb-3">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-          </div>
-          <div class="mb-3">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Sheetal . Made with <i class="fa fa-heart"></i> by Own</p>
+        </div>
     </div>
-  </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
 
-<footer>
-    <p>&copy; 2024 Sheetal Pisal. All rights reserved.</p>
-</footer>
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
 
-<script src="script.js"></script>
+    </script>
+    <script>
+
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right='0';
+        }
+        function closemenu(){
+            sidemenu.style.right='-200px';
+        }
+
+    </script>
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbxVq3KoMWXtuydm5cJsXi5P2a3esHgLzvaWtEcX3NiuBPUIy-8W2jufK29I9z1TkPHd/exec>'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
-
